@@ -120,17 +120,3 @@ body {
   cursor: pointer;
 }
 
-/* Responsiveness */
-@media (max-width: 375px) {
-  .flip-card {
-    width: 280px;
-    height: 380px;
-  }
-  .card .profile {
-    height: 150px;
-    width: 150px;
-  }
-  .card h4 {
-    font-size: 40px;
-  }
-}
