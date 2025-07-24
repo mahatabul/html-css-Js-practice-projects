@@ -1,0 +1,59 @@
+.container {
+  perspective: 1000px;
+  width: 125px;
+  height: 125px;
+  position: relative;
+  margin: 100px auto;
+  display: flex;
+  padding-top: 200px;
+}
+
+.cube {
+  width: 125px;
+  height: 125px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotation 20s infinite linear;
+}
+
+.side {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  opacity: 0.9;
+  backface-visibility: hidden; 
+}
+
+
+.front {
+  background: red;
+  transform: translateZ(62.5px);
+}
+.back {
+  background: blue;
+  transform: rotateY(180deg) translateZ(62.5px);
+}
+.right {
+  background: rgb(231, 10, 231);
+  transform: rotateY(90deg) translateZ(62.5px);
+}
+.left {
+  background: rgb(10, 232, 10);
+  transform: rotateY(-90deg) translateZ(62.5px);
+}
+.top {
+  background: aqua;
+  transform: rotateX(90deg) translateZ(62.5px);
+}
+.bottom {
+  background: gold;
+  transform: rotateX(-90deg) translateZ(62.5px);
+}
+
+@keyframes rotation {
+  0%   { transform: rotateX(45deg) rotateY(45deg); }
+  25%  { transform: rotateX(-45deg) rotateY(45deg); }
+  50%  { transform: rotateX(-45deg) rotateY(-45deg); }
+  75%  { transform: rotateX(45deg) rotateY(-45deg); }
+  100% { transform: rotateX(45deg) rotateY(45deg); }
+}
