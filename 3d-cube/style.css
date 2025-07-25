@@ -13,7 +13,7 @@
   height: 125px;
   position: relative;
   transform-style: preserve-3d;
-  animation: rotation 20s infinite linear;
+  animation: rotation 10s infinite linear;
 }
 
 .side {
