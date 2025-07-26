@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: rgba(0, 229, 255, 0.719);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  height: 250px;
+  width: 450px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.skill-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.skills {
+  flex: 1;
+  padding: 5px;
+  border-radius: 12px;
+  font-family: sans-serif;
+  background-color: white;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.781);
+  font-size: 15px;
+  
+}
+
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  background-color: rgba(164, 162, 162, 0.551);
+  border-radius: 22px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  
+}
+.progress-fill {
+  background-color: rgb(144, 0, 255);
+  height: 100%;
+  border-radius: 22px;
+  box-sizing: border-box;
+}
+
+.tooltip {
+
+  position: absolute;
+  background-color: rgb(144, 0, 255);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  white-space: nowrap;
+  
+}
