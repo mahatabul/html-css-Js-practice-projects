@@ -56,10 +56,10 @@
   width: 20px;
   height: 20px;
   background-color: rgba(128, 128, 128, 0.555);
-  border-radius: 50%; /* Makes it a circle */
+  border-radius: 50%; 
   position: relative;
   margin-right: 10px;
-  flex-shrink: 0; /* Prevent shrinking in flex container */
+  flex-shrink: 0; 
 }
 
 .option label {
