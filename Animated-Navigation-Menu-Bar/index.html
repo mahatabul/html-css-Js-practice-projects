@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animated Navigation Menu Bar</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/0b2ae9eceb.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/0b2ae9eceb.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/0b2ae9eceb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <div class="container">
-  <nav class="navbar">
-    <span class="nav-item"><i class="fa-solid fa-house"></i><span class="label">Home</span></span>
-    <span class="nav-item"><i class="fa-solid fa-blog"></i><span class="label">Blog</span></span>
-    <span class="nav-item"><i class="fa-solid fa-code"></i><span class="label">Code</span></span>
-    <span class="nav-item"><i class="fa-solid fa-envelope"></i><span class="label">Help</span></span>
-    <span class="nav-item"><i class="fa-solid fa-user"></i><span class="label">About</span></span>
-  </nav>
-</div>
+      <!-- Hidden radio buttons to control slider -->
+      <input type="radio" name="slider" id="home" checked />
+      <input type="radio" name="slider" id="blog" />
+      <input type="radio" name="slider" id="code" />
+      <input type="radio" name="slider" id="help" />
+      <input type="radio" name="slider" id="user" />
 
-   
-</body>
+      <nav>
+        <div class="slider"></div>
+
+        <label for="home" class="home">
+          <i class="fa-solid fa-house-chimney"></i><span>Home</span>
+        </label>
+
+        <label for="blog" class="blog">
+          <i class="fa-solid fa-blog"></i><span>Blog</span>
+        </label>
+
+        <label for="code" class="code">
+          <i class="fa-solid fa-code"></i><span>Code</span>
+        </label>
+
+        <label for="help" class="help">
+          <i class="fa-solid fa-envelope"></i><span>Help</span>
+        </label>
+
+        <label for="user" class="user">
+          <i class="fa-solid fa-user"></i><span>User</span>
+        </label>
+      </nav>
+    </div>
+  </body>
 </html>
