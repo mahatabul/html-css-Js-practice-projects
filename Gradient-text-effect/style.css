@@ -11,19 +11,20 @@
 
 h1 {
   font-size: 150px;
+  background: #833ab4;
   background: linear-gradient(
-    135deg,
-    red 0%,
-    #43de00 25%,
-    purple 50%,
-    blue 75%,
-    red 100%
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 25%,
+    rgba(252, 176, 69, 1) 50%,
+    rgba(253, 29, 29, 1) 75%,
+    rgba(131, 58, 180, 1) 100%
   );
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   background-size: 400%;
-  animation: myanimation 25s linear infinite;
+  animation: myanimation 20s linear infinite;
 }
 
 @keyframes myanimation {
