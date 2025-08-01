@@ -5,16 +5,29 @@
 .container {
   background-color: black;
   height: 100vh;
-  color: white;
   text-align: center;
   align-content: center;
 }
 
 h1 {
-  background: linear-gradient(to right, red, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* Optional fallback for Firefox */
-  background-clip: text;
+  font-size: 150px;
+  background: linear-gradient(
+    135deg,
+    red 0%,
+    #43de00 25%,
+    purple 50%,
+    blue 75%,
+    red 100%
+  );
   color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 400%;
+  animation: myanimation 10s linear infinite;
+}
+
+@keyframes myanimation {
+  100% {
+    background-position: 400%;
+  }
 }
