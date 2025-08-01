@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
+
+h1 {
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Optional fallback for Firefox */
+  background-clip: text;
+  color: transparent;
+}
