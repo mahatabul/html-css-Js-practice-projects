@@ -1,19 +1,79 @@
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(232, 231, 231);
 }
-.box{
+.box {
+  background-color: rgb(252, 252, 252);
+  margin: 10px 10px;
+  padding: 16px 16px;
+  font-size: 18px;
+  height: 300px;
+  width: 500px;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+}
 
-    background-color: rgb(236, 209, 209);
-    margin: 10px 10px;
-    padding: 16px 16px;
-    font-size: 18px;
-    height: 300px;
-    width: 500px;
-    text-align: left;
-    box-sizing: border-box;
+.box a {
+  text-decoration: none;
+  position: relative;
+}
 
+.box a::after,
+.box a::before {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  pointer-events: none;
+  
+}
+
+.box a:hover::after,
+.box a:hover::before {
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+  pointer-events: none;
+ 
+}
+
+
+.box a::after {
+  position: absolute;
+  background-color: rgb(87, 4, 253);
+  top: -35px;
+  left: -20%;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  padding: 2px 4px;
+  height: fit-content;
+  width: max-content;
+  content: "";
+}
+
+
+#projects:hover::after {
+  content: "View Projects";
+}
+#linkedIn:hover::after {
+  content: "View linkedIn";
+}
+#instagram:hover::after {
+  content: "View instagram";
+}
+
+
+.box a::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  background-color: rgb(87, 4, 253);
+  top: -20px;
+  right: 25%;
+  z-index: 0;
 }
