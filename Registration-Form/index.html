@@ -32,12 +32,15 @@
             <input type="radio" name="gender" value="female" id="gender">Female
             <input type="radio" name="gender" value="" id="gender">Prefer not to say
             <br>
-            <label for="address">
-                Address
+
+            <div class="address">
+                <label for="address">
+               <p>Address</p> 
             </label><br>
             <input type="text" placeholder="Enter street address"><br>
-            <input type="text" placeholder="Enter street address line 2"><br>
-
+            <input type="text" placeholder="Enter street address line 2"><br></div>
+            
+            <div class="rc">
             <select name="country" id="country">
 
                 <option value="">Country</option>
@@ -47,10 +50,13 @@
             </select>
 
             <input type="text" placeholder="Enter your city">
-
+        </div>
             <br>
-            <input type="text" placeholder="Enter your region">
-            <input type="number" placeholder="Enter postal code">
+            <div class="rc">
+                <input type="text" placeholder="Enter your region">
+                <input type="number" placeholder="Enter postal code">
+            </div>
+
             <br>
             <button>Submit</button>
 
