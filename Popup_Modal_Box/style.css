@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+img {
+  height: 120px;
+  width: 120px;
+  margin: auto;
+}
+#click {
+  font-size: 22px;
+  background-color: aqua;
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#click:hover {
+  background-color: rgba(0, 255, 255, 0.459);
+}
+#popup {
+  display: flex; /* Always in DOM for animation */
+  flex-direction: column;
+  position: absolute;
+  border-radius: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.586);
+  background-color: rgb(255, 255, 255);
+  padding: 22px;
+  width: 300px;
+  height: 300px;
+
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none; /* Prevent clicks when hidden */
+
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+#popup.show {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+p,
+h2 {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+.buttons button {
+  width: 100%;
+  font-size: 16px;
+  background-color: aqua;
+  border: 1px;
+  border-radius: 22px;
+  padding: 6px;
+}
+.buttons #yesButton {
+  color: white;
+  background-color: rgb(39, 184, 39);
+  font-weight: bold;
+}
+.buttons #yesButton:hover {
+  background-color: rgba(23, 131, 23, 0.997);
+}
+.buttons #noButton:hover {
+  background-color: rgb(148, 31, 16);
+}
+.buttons #noButton {
+  color: white;
+  background-color: rgb(240, 43, 17);
+  font-weight: bold;
+}
