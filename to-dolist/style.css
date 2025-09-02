@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(135deg, violet, blue);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mainbox {
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 12px 12px;
+  border-radius: 12px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
+  margin: 12px 0px;
+}
+.header h2 {
+  color: rgb(7, 7, 134);
+}
+.input {
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: rgb(243, 239, 234);
+  height: 40px;
+  
+}
+.input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 7px 12px;
+  height: 100%;
+}
+.input button {
+  border-radius: 40px;
+  background-color: rgb(21, 185, 43);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 100%;
+  padding: 5px 20px;
+  font-size: 16px;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.list-box {
+  padding: 7px 7px;
+  overflow: scroll;
+  height: 270px;
+  
+}
+ul{
+
+}
+ul li{
+    position: relative;
+    list-style: none;
+    padding: 6px 35px;
+}
+ul li::before{
+    content: '';
+    background-image: url(/images/radio.png);
+    background-position: center;
+    background-size: cover;
+    top:9px;
+    left: 5px;
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    opacity: 50%;
+    cursor: pointer;
+
+}
+ul {
+    max-height: 250px;   
+    overflow-y: auto;     
+    
+}
+ul li span {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+    height: 23px;
+    width: 23px;
+    font-size: 20px;           /* adjusted so it fits */
+    display: flex;             /* make span a flex container */
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li span:hover {
+    background-color: rgba(232, 85, 85, 0.958);
+    color: white;
+}
+
+ul li.checked{
+    color: rgba(0, 0, 0, 0.409);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(/images/checked.png);
+    opacity: 1;
+}
+.icon {
+  height: 30px;
+}
