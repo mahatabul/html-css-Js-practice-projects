@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, "Poppins";
+  box-sizing: border-box;
+  background: rgb(102, 102, 230);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  background-color: aliceblue;
+  width: 540px;
+  height: 500px;
+  border-radius: 22px;
+  padding: 22px;
+  color: rgb(17, 17, 141);
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+#score {
+  font-size: 40px;
+  margin: 5px;
+}
+.ques {
+  font-size: 22px;
+  font-weight: bold;
+}
+.ans {
+  display: none;
+  margin: 25px 1px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+
+  /* hidden by default */
+  
+}
+
+.ans.active {
+  /* keep flex layout when visible */
+  display: flex;
+}
+
+.options {
+  border: 1px solid rgb(102, 102, 230);
+  border-radius: 12px;
+  padding: 15px;
+  color: black;
+}
+.btns{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+#submit {
+  /* margin: 5px 30%; */
+  width: 200px;
+  border-radius: 12px;
+  padding: 10px;
+  border: none;
+  background: rgba(7, 181, 7, 0.657);
+  color: white;
+  font-weight: 700;
+}
+#submit:hover {
+  background: rgb(7, 181, 7);
+}
+
+.options.wrong {
+  background-color: rgb(236, 111, 109);
+}
+.options.correct {
+  background-color: rgb(109, 236, 115);
+}
