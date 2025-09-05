@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(140deg, pink, orange, purple);
+  /* background-repeat: no-repeat; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  box-sizing: border-box;
+}
+.app img {
+  height: 35px;
+}
+.app{
+    max-width: 600px;
+    width: 90%;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  padding: 5px 7px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, rgb(0, 191, 255),pink);
+}
+
+.notes{
+    background-color: rgba(246, 177, 3, 0.707);
+
+    margin: 12px 5px;
+    border-radius: 6px;
+    max-height: 700px;
+    min-height: 100px;
+    height: 95%;
+    overflow: scroll;
+}
+.note{
+    position: relative;
+    background-color: white;
+    border-radius: 6px;
+    max-height: 120px;
+    height: 90%;
+    overflow: scroll;
+    margin: 12px 5px;
+    padding: 7px 12px;
+}
+.note span img{
+    height: 20px;
+    width: 20px;
+}
+.note p[contenteditable="true"]:focus {
+    outline: none;
+} 
+
+.note .delet {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    z-index: 10; 
+    cursor: pointer;
+    /* pointer-events: none; */
+}
