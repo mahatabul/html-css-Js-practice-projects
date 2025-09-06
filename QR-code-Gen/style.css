@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: rgba(255, 255, 0, 0.705);
+}
+.app {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  gap: 10px;
+  padding: 22px 12px;
+  border-radius: 12px;
+
+}
+.top{
+    text-align: center;
+    width: 100%;
+}
+.app input{
+    padding: 1px 12px;
+    width: 100%;
+    margin-top: 12px;
+}
+button{
+    padding: 12px;
+    border-radius: 10px;
+    background-color: rgb(249, 249, 2);
+    border:none;
+}
