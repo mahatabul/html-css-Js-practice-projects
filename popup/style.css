@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.app {
+    position: relative;
+}
+
+#submit {
+    padding: 13px 12px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    min-width: 300px;
+    min-height: 250px; /* Reduced to better fit content */
+}
+
+.popup.show {
+    display: flex;
+}
+
+.popup img {
+    width: 90px;
+    height: 90px;
+    margin-top: -55px; /* Moves half the image (45px) outside the popup */
+}
+
+.popup p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0; /* Simplified margin for better spacing */
+}
+
+.popup button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-bottom: 0; /* Removed negative margin to keep button inside popup */
+}
+
+.popup button:hover, #submit:hover {
+    background-color: #333;
+}
