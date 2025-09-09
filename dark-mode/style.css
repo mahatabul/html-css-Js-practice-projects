@@ -1,0 +1,55 @@
+:root {
+  --color1: #333;
+  --color2: white;
+}
+.darkmode {
+  --color1: white;
+  --color2: #333;
+}
+body{
+    background-color: var(--color2);
+    color: var(--color1);
+}
+nav {
+  padding: 10px;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color1);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#btn {
+  width: 200px;
+  background-color: var(--color1);
+  color: var(--color2);
+  border-radius: 22px;
+  padding: 10px 22px;
+  font-weight: bold;
+  border: none;
+}
+img {
+  height: 30px;
+}
